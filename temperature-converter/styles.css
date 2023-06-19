@@ -1,0 +1,59 @@
+
+body{
+    background-color: #eae2b7;
+}
+
+main{
+    max-width: 400px;
+    margin: auto;
+    background-color: #fab1a0;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+main > input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+section > select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+section > p {
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+section > button{
+    display: block;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+#result{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
