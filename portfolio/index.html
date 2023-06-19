@@ -1,64 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Portfolio</title>
+  <title>Parshuram's Portfolio</title>
 </head>
+
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <a href="#">parshuram kalunkhe</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home">
+    <div class="container">
+      <img src="/pfp.jpg" alt="">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Professional and Creative Web Developer</p>
+      <a href="#contact" class="cta-btn">Contact Me</a>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan viverra ex, sed volutpat nibh tempus a.</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid-container">
-        <div class="grid-item">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-        </div>
-        <div class="grid-item">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-        </div>
-        <div class="grid-item">
-          <img src="project3.jpg" alt="Project 3">
-          <h3>Project 3</h3>
-        </div>
-        <!-- Add more grid items for your projects -->
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>SSC (10th Standard)</h3>
+        <p>XYZ High School</p>
+        <p>Year: 2010</p>
       </div>
-    </section>
+      <div class="education-item">
+        <h3>HSC (12th Standard)</h3>
+        <p>ABC Junior College</p>
+        <p>Year: 2012</p>
+      </div>
+      <div class="education-item">
+        <h3>BSc Graduation</h3>
+        <p>Example University</p>
+        <p>Year: 2015</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Core Java</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Shell</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>React.js</li>
+        <li>MongoDB</li>
+        <li>Linux/Unix</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Vim</li>
+        <li>VS Code</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1: E-commerce Website</h3>
+        <p>
+          This is a fully functional e-commerce website built using React.js and Node.js. It includes features such as
+          user authentication, product browsing, cart management, and secure payment integration.
+        </p>
+        <ul>
+          <li>Technologies used: React.js, Node.js, Express.js, MongoDB</li>
+          <li>Role: Full-stack developer</li>
+          <li>Responsibilities:
+            <ul>
+              <li>Designed and developed the front-end using React.js</li>
+              <li>Implemented back-end APIs using Node.js and Express.js</li>
+              <li>Integrated MongoDB for data storage and retrieval</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>Project 2: Weather App</h3>
+        <p>
+          The Weather App is a web application that provides real-time weather information for a given location. It
+          fetches data from a weather API and displays the current weather conditions, temperature, humidity, and
+          forecast.
+        </p>
+        <ul>
+          <li>Technologies used: JavaScript, HTML, CSS</li>
+          <li>Role: Front-end developer</li>
+          <li>Responsibilities:
+            <ul>
+              <li>Implemented the UI using HTML and CSS</li>
+              <li>Developed the functionality to fetch weather data using JavaScript</li>
+              <li>Styled the app for an intuitive and user-friendly experience</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>Project 3: Task Management System</h3>
+        <p>
+          The Task Management System is a web-based application that allows users to create, assign, and track tasks
+          within a team. It provides features for task categorization, priority setting, and progress tracking.
+        </p>
+        <ul>
+          <li>Technologies used: Python, Django, PostgreSQL</li>
+          <li>Role: Full-stack developer</li>
+          <li>Responsibilities:
+            <ul>
+              <li>Designed the database schema using PostgreSQL</li>
+              <li>Implemented the backend logic using Python and Django</li>
+              <li>Developed the frontend UI and user interactions</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service">
+        <img src="service-image-1.jpg" alt="Service 1">
+        <h3>Web Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus enim non neque efficitur, id lacinia
+          enim dapibus.</p>
+      </div>
+      <div class="service">
+        <img src="service-image-2.jpg" alt="Service 2">
+        <h3>Mobile App Development</h3>
+        <p>Aliquam vestibulum risus eu justo convallis, in elementum justo porttitor. Vivamus tincidunt lacus non
+          suscipit semper.</p>
+      </div>
+      <div class="service">
+        <img src="service-image-3.jpg" alt="Service 3">
+        <h3>UI/UX Design</h3>
+        <p>Curabitur consectetur felis id aliquam tempus. Praesent et est in nisi lobortis posuere eu sed odio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-img">
+          <img src="/pfp.jpg" alt="Your Name">
+        </div>
+        <div class="about-text">
+          <h3>Your Name</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur elit eu ex cursus, id tristique
+            neque tincidunt. Quisque malesuada pharetra tristique. Vestibulum scelerisque velit et nunc feugiat, nec
+            placerat tortor efficitur. In eget nisl nulla.
+          </p>
+          <p>
+            Ut ullamcorper lobortis massa, non suscipit libero consectetur vitae. Sed vestibulum turpis id justo commodo
+            elementum. Proin sit amet mi libero. Nullam cursus placerat leo, ut interdum ligula laoreet vel. Donec
+            sollicitudin rutrum aliquet.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
       <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
+      <div class="contact-form">
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <ul>
+          <li><i class="fas fa-map-marker"></i> Your Address, City, Country</li>
+          <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+          <li><i class="fas fa-envelope"></i> info@example.com</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
 
   <footer>
-    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2023 Portfolio. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>
