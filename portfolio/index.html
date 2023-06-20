@@ -4,233 +4,246 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
-  <title>Parshuram's Portfolio</title>
 </head>
 
 <body>
-  <nav>
-    <div class="container">
-      <div class="logo">
-        <a href="#">parshuram kalunkhe</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Parshuram's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
 
-  <header id="home">
-    <div class="container">
-      <img src="/pfp.jpg" alt="">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Professional and Creative Web Developer</p>
-      <a href="#contact" class="cta-btn">Contact Me</a>
-    </div>
-  </header>
-
-  <section id="education">
-    <div class="container">
-      <h2>Education</h2>
-      <div class="education-item">
-        <h3>SSC (10th Standard)</h3>
-        <p>XYZ High School</p>
-        <p>Year: 2010</p>
-      </div>
-      <div class="education-item">
-        <h3>HSC (12th Standard)</h3>
-        <p>ABC Junior College</p>
-        <p>Year: 2012</p>
-      </div>
-      <div class="education-item">
-        <h3>BSc Graduation</h3>
-        <p>Example University</p>
-        <p>Year: 2015</p>
+  <!-- Home -->
+  <section id="home">
+    <div class="container py-5 d-flex align-items-center">
+      <div class="row">
+        <div class="col">
+          <h1>Welcome to My Portfolio</h1>
+          <p>Passionate Web Developer | HTML | CSS | JavaScript</p>
+          <a href="#contact" class="btn btn-light btn-outline-success">Get in Touch</a>
+        </div>
+        <div class="col">
+          <img src="pfp.jpg" alt="Profile Image" class="img-fluid rounded-circle">
+        </div>
       </div>
     </div>
   </section>
+
+
+
+  <!-- About -->
+  <div id="about">
+    <section id="developer-intro">
+      <div class="container">
+        <h1 class="text-center m-5">About</h1>
+        <p>
+          Hi, I'm John Doe, a passionate developer with expertise in front-end web development. I have a strong
+          foundation in HTML, CSS, and JavaScript, and I enjoy creating visually appealing and user-friendly websites.
+          With several years of experience, I strive to deliver high-quality code and seamless user experiences.
+        </p>
+        <p>
+          I am always eager to learn and stay updated with the latest web technologies and trends. I believe in
+          continuous improvement and enjoy collaborating with teams to solve complex problems and create innovative
+          solutions.
+        </p>
+      </div>
+  </div>
+  </div>
+  </section>
+
+
 
   <section id="skills">
     <div class="container">
       <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Core Java</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>Shell</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>React.js</li>
-        <li>MongoDB</li>
-        <li>Linux/Unix</li>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>Vim</li>
-        <li>VS Code</li>
-      </ul>
-    </div>
-  </section>
-
-
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project 1: E-commerce Website</h3>
-        <p>
-          This is a fully functional e-commerce website built using React.js and Node.js. It includes features such as
-          user authentication, product browsing, cart management, and secure payment integration.
-        </p>
-        <ul>
-          <li>Technologies used: React.js, Node.js, Express.js, MongoDB</li>
-          <li>Role: Full-stack developer</li>
-          <li>Responsibilities:
-            <ul>
-              <li>Designed and developed the front-end using React.js</li>
-              <li>Implemented back-end APIs using Node.js and Express.js</li>
-              <li>Integrated MongoDB for data storage and retrieval</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="project">
-        <h3>Project 2: Weather App</h3>
-        <p>
-          The Weather App is a web application that provides real-time weather information for a given location. It
-          fetches data from a weather API and displays the current weather conditions, temperature, humidity, and
-          forecast.
-        </p>
-        <ul>
-          <li>Technologies used: JavaScript, HTML, CSS</li>
-          <li>Role: Front-end developer</li>
-          <li>Responsibilities:
-            <ul>
-              <li>Implemented the UI using HTML and CSS</li>
-              <li>Developed the functionality to fetch weather data using JavaScript</li>
-              <li>Styled the app for an intuitive and user-friendly experience</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="project">
-        <h3>Project 3: Task Management System</h3>
-        <p>
-          The Task Management System is a web-based application that allows users to create, assign, and track tasks
-          within a team. It provides features for task categorization, priority setting, and progress tracking.
-        </p>
-        <ul>
-          <li>Technologies used: Python, Django, PostgreSQL</li>
-          <li>Role: Full-stack developer</li>
-          <li>Responsibilities:
-            <ul>
-              <li>Designed the database schema using PostgreSQL</li>
-              <li>Implemented the backend logic using Python and Django</li>
-              <li>Developed the frontend UI and user interactions</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="service">
-        <img src="service-image-1.jpg" alt="Service 1">
-        <h3>Web Development</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus enim non neque efficitur, id lacinia
-          enim dapibus.</p>
-      </div>
-      <div class="service">
-        <img src="service-image-2.jpg" alt="Service 2">
-        <h3>Mobile App Development</h3>
-        <p>Aliquam vestibulum risus eu justo convallis, in elementum justo porttitor. Vivamus tincidunt lacus non
-          suscipit semper.</p>
-      </div>
-      <div class="service">
-        <img src="service-image-3.jpg" alt="Service 3">
-        <h3>UI/UX Design</h3>
-        <p>Curabitur consectetur felis id aliquam tempus. Praesent et est in nisi lobortis posuere eu sed odio.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <div class="about-img">
-          <img src="/pfp.jpg" alt="Your Name">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>Programming Languages: Java, Python, C++</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Database Management: MySQL, MongoDB</li>
+            <li>Frameworks: React, Angular, Django</li>
+          </ul>
         </div>
-        <div class="about-text">
-          <h3>Your Name</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur elit eu ex cursus, id tristique
-            neque tincidunt. Quisque malesuada pharetra tristique. Vestibulum scelerisque velit et nunc feugiat, nec
-            placerat tortor efficitur. In eget nisl nulla.
-          </p>
-          <p>
-            Ut ullamcorper lobortis massa, non suscipit libero consectetur vitae. Sed vestibulum turpis id justo commodo
-            elementum. Proin sit amet mi libero. Nullam cursus placerat leo, ut interdum ligula laoreet vel. Donec
-            sollicitudin rutrum aliquet.
-          </p>
+        <div class="col-md-4">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Effective Communication</li>
+            <li>Problem Solving</li>
+            <li>Teamwork and Collaboration</li>
+            <li>Time Management</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h3>Additional Skills</h3>
+          <ul>
+            <li>Project Management</li>
+            <li>Data Analysis</li>
+            <li>Presentation Skills</li>
+            <li>Leadership</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="education">
     <div class="container">
-      <h2>Contact Me</h2>
-      <div class="contact-form">
-        <form>
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-      <div class="contact-info">
-        <h3>Contact Information</h3>
-        <ul>
-          <li><i class="fas fa-map-marker"></i> Your Address, City, Country</li>
-          <li><i class="fas fa-phone"></i> +1 234 567 890</li>
-          <li><i class="fas fa-envelope"></i> info@example.com</li>
-        </ul>
+      <h2>Education</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <p>University of ABC</p>
+          <p>Graduation Year: 2022</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Online Courses</h3>
+          <ul>
+            <li>Advanced Web Development - Coursera</li>
+            <li>Data Science Fundamentals - edX</li>
+            <li>Introduction to Artificial Intelligence - Udemy</li>
+            <li>Project Management Essentials - LinkedIn Learning</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
-  
 
-  <footer>
+  <section id="experience">
     <div class="container">
-      <p>&copy; 2023 Portfolio. All rights reserved.</p>
+      <h2>Experience</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Software Developer</h3>
+          <p>ABC Tech Solutions</p>
+          <p>2019 - Present</p>
+          <ul>
+            <li>Developed and maintained web applications using Django framework.</li>
+            <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
+            <li>Implemented new features and improved performance of existing applications.</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Intern</h3>
+          <p>XYZ Software Company</p>
+          <p>Summer 2018</p>
+          <ul>
+            <li>Assisted in testing and debugging software applications.</li>
+            <li>Participated in team meetings and contributed ideas for product improvement.</li>
+            <li>Learned and applied industry best practices in software development.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  </div>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h1 class="text-center m-5">Projects</h1>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="pfp.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="pfp.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="pfp.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container ">
+      <h1 class="text-center m-5">Contact Form</h1>
+      <form action="#" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright Parshuram Kalunkhe.
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
